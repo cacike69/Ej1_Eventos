@@ -1,0 +1,56 @@
+
+<app-eventos *ngFor="let i of eventos"></app-eventos>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-danger">
+  <!-- <a class="navbar-brand" href="#">Alta Evento</a> -->
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      <a class="nav-item nav-link active" [routerLink]="['/alta-evento']">Alta Evento <span class="sr-only">(current)</span></a>
+      <a class="nav-item nav-link" [routerLink]="['/modificar-evento']">Modificar Evento</a>
+
+
+    </div>
+  </div>
+</nav>
+
+<table *ngFor="let i of eventos">
+  <tr>
+    <td>
+    {{i.Nombre}}
+    </td>
+    <td>
+      {{i.Correo}}
+    </td>
+    <td>
+    {{i.Lugar}}
+    </td>
+    <td>
+    {{i.Descripcion}}
+    </td>
+  </tr>
+
+
+  <tr>
+    <td>
+
+    </td>
+    <td>
+
+    </td>
+    <td>
+
+    </td>
+    <td>
+
+    </td>
+  </tr>
+</table>
+
+
+
+
+<nav>
+

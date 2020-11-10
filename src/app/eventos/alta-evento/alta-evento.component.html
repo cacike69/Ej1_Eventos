@@ -1,0 +1,52 @@
+
+
+
+
+<div class="container h-100 bg-olive">
+
+
+
+  <div class="form-row mt-5">
+      <div class="col-md-4 mb-3">
+          <label for="validarNombre_evento">Nombre Evento:<span class="red" aria-required="true">*</span></label>
+          <input #Nombre  type="text" class="form-control" id="validarNombre" name="validarNombre" required>
+      </div>
+  </div>
+
+
+  <div class="form-row">
+      <div class="col-md-4 mb-3">
+          <label for="validarEmail">Correo:<span class="red">*</span></label>
+          <input #Correo type="email" class="form-control" id="validarEmail" name="validarEmail" required>
+      </div>
+  </div>
+
+
+  <div class="form-row">
+      <div class="col-md-4 mb-3">
+          <label for="validarLugar">Lugar:</label>
+          <input #Lugar type="text" class="form-control" id="validarAsunto" name="validarAsunto" required>
+      </div>
+  </div>
+
+  <div class="form-group">
+      <label for="validationMensaje">Descripcion Evento:<span class="red"></span></label>
+      <textarea #Descripcion class="form-control" id="validationMensaje" name="validationMensaje" rows="3" min="25" required></textarea>
+  </div>
+
+  <div class="form-group mb-10">
+      <button class="btn btn-primary" type="submit" name="submit" (click)="alta_evento(Nombre.value,Correo.value,Lugar.value,Descripcion.value)">Enviar</button>
+      <!-- <button class="btn btn-success" type="reset" name="reset">Limpiar</button> -->
+  </div>
+
+
+
+
+
+<aside id="asideleft">
+  <p>hola</p>
+
+
+</aside>
+
+
